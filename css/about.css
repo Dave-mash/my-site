@@ -1,0 +1,15 @@
+.about_container {
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_container_wrapped {
+    /* background: red; */
+    width: 60%;
+    height: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10%;
+}
