@@ -6,15 +6,28 @@
 
 .project_div {
     height: 70%;
-    width: 80%;
+    width: 85%;
     display: flex;
-    background: red;
+    align-items: center;
+    /* background: red; */
     justify-content: space-around;
+}
+
+.project_div img {
+    width: 4%;
+    height: 8%;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.project_div img:hover {
+    opacity: 1;
 }
 
 .project_spanshot {
     background: green;
     flex: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +36,7 @@
 .project_description {
     background: blue;
     flex: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,3 +45,4 @@
 .project_description p {
     width: 80%;
 }
+
