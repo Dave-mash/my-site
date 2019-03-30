@@ -1,5 +1,6 @@
 .projects_container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -25,8 +26,8 @@
 }
 
 .project_spanshot {
-    background: green;
-    flex: 30%;
+    /* background: green; */
+    flex: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -34,15 +35,60 @@
 }
 
 .project_description {
-    background: blue;
-    flex: 60%;
+    /* background: blue; */
+    flex: 50%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .project_description p {
     width: 80%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
+.img_slider {
+    width: 80%;
+    cursor: pointer;
+    /* background: brown; */
+    height: 80%;
+}
+
+.img_slider video {
+    width: 100%;
+    height: 80%;
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-around;
+    /* background: red; */
+    height: 13%;
+}
+
+
+.platforms a {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(73, 160, 247);
+    width: 30%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.platforms a {
+    text-decoration: none;
+    color: #000;
+}
+
+.platforms a:hover {
+    background: rgb(73, 160, 247);
+    color: #fff;
+}
