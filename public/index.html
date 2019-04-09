@@ -40,73 +40,102 @@
     </div>
     <div class="about_container full_page">
         <!-- about section -->
+        <h1 id='about_page' style="opacity:.7;">ABOUT</h1>
         <div class="about_container_wrapped">
+            <img src="../media/dave.jpg" alt="selfie" id="selfie">
             <p id="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique eligendi atque quo amet pariatur quam molestias dolorum, reiciendis asperiores voluptatibus magni maiores quae. Fuga praesentium tempore repellendus quae voluptas. Commodi cupiditate non magnam labore. Modi hic architecto quasi soluta nam, doloremque laborum perferendis tempora veniam ratione saepe odio sapiente!</p>
         </div>
         <div class="skills_wrapped">
             <div class="html bar">
                 <div class="bar_text">HTML</div>
-                <div class="bar_level" style="width:90%;background:orangered;"></div>
+                <div class="bar_level" style="width:70%;background:rgb(26, 122, 122);"></div>
+                <i style="width:10%;opacity:.7;">90%</i>
             </div>
             <div class="css bar">
                 <div class="bar_text">CSS</div>
-                <div class="bar_level" style="width:80%;background:dodgerblue;"></div>
+                <div class="bar_level" style="width:70%;background:rgb(26, 122, 122);"></div>
+                <i style="width:10%;opacity:.7;">90%</i>
             </div>
             <div class="javascript bar">
                 <div class="bar_text">Javascript</div>
-                <div class="bar_level" style="width:70%;background:yellow;"></div>
+                <div class="bar_level" style="width:65%;background:rgb(26, 122, 122);"></div>
+                <i style="width:15%;opacity:.7;">80%</i>
             </div>
             <div class="react bar">
                 <div class="bar_text">ReactJS</div>
-                <div class="bar_level" style="width:50%;background:dodgerblue;"></div>
+                <div class="bar_level" style="width:65%;background:rgb(26, 122, 122);"></div>
+                <i style="width:15%;opacity:.7;">80%</i>
             </div>
             <div class="python bar">
                 <div class="bar_text">Python</div>
-                <div class="bar_level" style="width:60%;background:royalblue;"></div>
+                <div class="bar_level" style="width:65%;background:rgb(26, 122, 122);"></div>
+                <i style="width:15%;opacity:.7;">80%</i>
             </div>
             <div class="flask bar">
                 <div class="bar_text">Flask</div>
-                <div class="bar_level" style="width:80%;background:darkslategray;"></div>
+                <div class="bar_level" style="width:63%;background:rgb(26, 122, 122);"></div>
+                <i style="width:18%;opacity:.7;">75%</i>
             </div>
             <div class="version_control bar">
                 <div class="bar_text">Postgresql</div>
-                <div class="bar_level" style="width:80%;background:royalblue;"></div>
+                <div class="bar_level" style="width:65%;background:rgb(26, 122, 122);"></div>
+                <i style="width:15%;opacity:.7;">80%</i>
             </div>
             <div class="postgres bar">
                 <div class="bar_text">Version control</div>
-                <div class="bar_level" style="width:70%;background:darkorange;"></div>
+                <div class="bar_level" style="width:70%;background:rgb(26, 122, 122);"></div>
+                <i style="width:10%;opacity:.7;">90%</i>
             </div>
         </div>
     </div>
     <div class="projects_container full_page">
-        <h1 style="opacity:.7;">PROJECTS</h1>
+        <h1 style="opacity:.7;margin:0;margin-bottom:20px">PROJECTS</h1>
         <!-- portfolio projects -->
         <div class="project_div">
-            <img src="../media/left-arrow.png" alt="left arrow">
-            <div class="project_spanshot">
-                <div class="img_slider">
-                    <video src="../media/binary.mp4" autoplay='true' loop='true'></video>
-                    <div class="platforms">
-                        <a href="https://github.com/Dave-mash/binary-rain/tree/master" target="_blank">GitHub</a>
-                        <a href="https://dave-mash.github.io/binary-rain/" target="_blank">Live</a>
+            <img id='left_arrow' src="../media/left-arrow.png" onclick="plusSlides(-1)" alt="left arrow">
+            <div class="sliders">
+                <div class="slider_container hidden">
+                    <div class="project_spanshot">
+                        <div class="img_slider">
+                            <video src="../media/binary.mp4" autoplay='true' loop='true'></video>
+                            <div class="platforms">
+                                <a href="https://github.com/Dave-mash/binary-rain/tree/master" target="_blank">GitHub</a>
+                                <a href="https://dave-mash.github.io/binary-rain/" target="_blank">Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_description">
+                        <h2 style="color:rgb(73, 160, 247);text-decoration:underline;">Binary rain</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cupiditate eaque, necessitatibus sapiente quo quidem iste ut deleniti perferendis modi illo neque beatae aliquid ratione eveniet dolore laudantium, doloribus suscipit ea est, itaque enim ab? Recusandae architecto ex aut sed, corporis dolores laborum eos, suscipit veniam voluptatibus expedita. Minima, pariatur.</p>
                     </div>
                 </div>
+                <div class="slider_container hidden">caption two</div>
+                <div class="slider_container hidden">caption three</div>
             </div>
-            <div class="project_description">
-                <h2 style="color:rgb(73, 160, 247);text-decoration:underline;">Binary rain</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cupiditate eaque, necessitatibus sapiente quo quidem iste ut deleniti perferendis modi illo neque beatae aliquid ratione eveniet dolore laudantium, doloribus suscipit ea est, itaque enim ab? Recusandae architecto ex aut sed, corporis dolores laborum eos, suscipit veniam voluptatibus expedita. Minima, pariatur.</p>
-            </div>
-            <img src="../media/right-arrow.png" alt="right arrow">
+            <img id='right_arrow' src="../media/right-arrow.png" onclick="plusSlides(1)" alt="right arrow">
         </div>
+
+            <div class="dot_div">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
     </div>
     <div class="contact_container full_page">
         <!-- contact information -->
-        <form name="contact_form">
-            <input  name="name" type="text" placeholder="name"><br>
-            <input  name="email" type="email" placeholder="email"><br>
-            <textarea name="textarea" id="" cols="20" rows="10" placeholder="message"></textarea><br>
-            <button>Submit</button>
-        </form>
+        <h1 style="opacity:.7;margin:0">CONTACT</h1>
+        
+        <div class="contact_wrapper">
+            <form id="contact_form" name="contact_form">
+                <input name="name" type="text" placeholder="name" required><br>
+                <input name="email" type="email" placeholder="email" required><br>
+                <textarea name="textarea" placeholder="message" required></textarea><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        <footer>
+            <i>David Macharia copyright &copy; 2019</i>
+        </footer>
     </div>
     <script src="../js/style.js"></script>
 </body>

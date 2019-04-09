@@ -1,17 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
 .projects_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .project_div {
-    height: 70%;
+    height: 60%;
     width: 85%;
     display: flex;
     align-items: center;
     /* background: red; */
     justify-content: space-around;
+}
+
+.dot_div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active_dot, .dot:hover {
+    background-color: #717171;
+}
+
+.sliders {
+    /* background: green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider_container {
+    display: flex;
 }
 
 .project_div img {
@@ -26,19 +62,20 @@
 }
 
 .project_spanshot {
-    /* background: green; */
     flex: 50%;
-    height: 100%;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project_description {
+    background: #ddd;
     /* background: blue; */
     flex: 50%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
+    height: 95%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -53,14 +90,41 @@
 
 .img_slider {
     width: 80%;
-    cursor: pointer;
+    /* cursor: pointer; */
     /* background: brown; */
-    height: 80%;
+    height: 90%;
 }
 
 .img_slider video {
     width: 100%;
     height: 80%;
+}
+
+.slider_container {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .platforms {
