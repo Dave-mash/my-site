@@ -54,8 +54,12 @@ function navScroll() {
                 window.scrollTo(0, homePage.offsetTop);
             } else if (this.firstElementChild.id === 'about') {
                 window.scrollTo(0, aboutPage.offsetTop);
+                console.log(workPage.offsetTop)
+                console.log(navBar.offsetTop)
             } else if (this.firstElementChild.id === 'work') {
                 window.scrollTo(0, workPage.offsetTop);
+                console.log(navBar.offsetTop)
+                console.log(workPage.offsetTop)
             } else if (this.firstElementChild.id === 'contact') {
                 window.scrollTo(0, contactPage.offsetTop);
             }
