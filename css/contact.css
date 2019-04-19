@@ -69,3 +69,38 @@ footer {
 #contact_form button:hover {
     color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+    .contact_container h1 {
+        font-size: 25px;
+    }
+
+    .contact_wrapper {
+        /* background: red; */
+        width: 95%;
+    }
+
+    form input{
+        font-size: 15px;
+        
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .contact_wrapper {
+        /* background: red; */
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .contact_wrapper {
+        width: 70%;
+        font-size: 17px;
+        /* background: green; */
+    }
+}

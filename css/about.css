@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
 }
 
 #about_page {
@@ -15,7 +15,7 @@
 }
 
 .about_container_wrapped {
-    /* background: red; */
+    /* background: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@
 
 .skills_wrapped {
     /* background: blue; */
-    width: 70%;
+    width: 50%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,7 @@
 .bar {
     background: rgb(212, 210, 210);
     width: 80%;
+    /* background: red; */
     height: 8%;
     display: flex;
 }
@@ -70,7 +71,80 @@
     color: #fff;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 20%;
     background: dodgerblue;
 }
+
+@media screen and (max-width: 600px) {
+    .about_container_wrapped {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_container_wrapped p {
+        width: 100%;
+        /* background: blue; */
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #selfie {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    #about_page {
+        position: relative;
+        font-size: 25px;
+        top: 20px;
+    }
+
+    .about_container {
+        flex-direction: column;
+    }
+
+    .skills_wrapped {
+        align-items: center;
+    }
+
+    .bar i {
+        font-size: 10px;
+    }
+
+    .bar_text {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .about_container {
+        height: 90vh;
+    }
+
+    .bar {
+        /* background: red; */
+        width: 90%;
+    }
+
+    .bar_text {
+        font-size: 10px;
+        /* background: red; */
+    }
+
+    .about_container_wrapped {
+        /* background: blue; */
+        /* width: 70%; */
+    }
+
+    .skills_wrapped {
+        width: 50%;
+        /* background: red; */
+    }
+}
+

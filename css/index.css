@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     /* background: red; */
     color: #fff;
+    justify-content: center;
 }
 
 .home_container_wrapped {
@@ -20,7 +21,6 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 2;
-    margin-top: 17%;
 }
 
 #main_title {
@@ -52,7 +52,7 @@ body {
     top: 0;
 }
 
-.sticky + .about_container {
+.sticky+.about_container {
     padding-top: 60px;
 }
 
@@ -101,4 +101,37 @@ body {
     background: rgb(32, 32, 32);
     opacity: .9;
     z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    #intro_paragraph {
+        font-size: 15px;
+    }
+
+    #main_title {
+        font-size: 40px;
+    }
+
+    #main_title span {
+        font-size: 40px;
+    }
+
+    .nav_hover {
+        /* background: red; */
+        width: 70%;
+    }
+
+    .nav_hover p {
+        font-size: 15px;
+        padding: 0 10px;
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .nav_hover {
+        /* background: red; */
+        width: 40%;
+    }
 }

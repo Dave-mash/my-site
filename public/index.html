@@ -20,7 +20,7 @@
         <div class="overlay_div"></div>
 
         <div class="home_container_wrapped">
-            <h1 id="main_title"><span style="color:rgb(73, 160, 247);font-size:70px;">H</span>ello!</h1>
+            <h1 id="main_title"><span style="color:rgb(73, 160, 247);">H</span>ello!</h1>
             <p id="intro_paragraph">Welcome to my site. My name is David Macharia,<br><br> I am a full stack <span style="color: rgb(73, 160, 247);">Web Developer</span></p>
         </div>
     </div>
@@ -40,7 +40,7 @@
     </div>
     <div class="about_container full_page">
         <!-- about section -->
-        <h1 id='about_page' style="opacity:.7;margin:0">ABOUT</h1>
+        <h1 id='about_page' style="opacity:.7;margin:0">ABOUT ME</h1>
         <div class="about_container_wrapped">
             <img src="../media/dave.jpg" alt="selfie" id="selfie">
             <p id="about_paragraph">Hello again, I'm a self-taught fullstack Web Developer based in Nairobi, Kenya. Knowledge acquired through immense research and a bit of mentorship. All my work is driven by the passion I have for programming. Self motivation has been my biggest strength throught my career, it has brought me this far. I'm currently working with Python and front-end Javascript and my primary interests include but not limited to - code visualizations, software interfacing, and back-end optimization. Currently, all my work is my own personal effort however, I am more than capable of teamwork. Feel free to contact me through email or slack</p>
@@ -57,7 +57,7 @@
                 <i style="width:10%;opacity:.7;">90%</i>
             </div>
             <div class="responsive bar">
-                <div class="bar_text" style='font-size:15px'>Responsive Design</div>
+                <div class="bar_text">Responsive Design</div>
                 <div class="bar_level" style="width:70%;background:rgb(26, 122, 122);"></div>
                 <i style="width:10%;opacity:.7;">90%</i>
             </div>
@@ -94,7 +94,7 @@
         </div>
     </div>
     <div class="projects_container full_page">
-        <h1 style="opacity:.7;margin:0;margin-bottom:20px">PROJECTS</h1>
+        <h1 id="project_title">PROJECTS</h1>
         <!-- portfolio projects -->
         <div class="project_div">
             <img id='left_arrow' src="../media/left-arrow.png" onclick="plusSlides(-1)" alt="left arrow">
@@ -102,6 +102,10 @@
                 <div class="slider_container hidden">
                     <div class="project_spanshot">
                         <div class="img_slider">
+                            <div class="next_prev">
+                                <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                                <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                            </div>
                             <video src="../media/binary.mp4" autoplay='true' loop='true'></video>
                             <div class="platforms">
                                 <a href="https://github.com/Dave-mash/binary-rain/tree/master" target="_blank">GitHub</a>
@@ -111,11 +115,59 @@
                     </div>
                     <div class="project_description">
                         <h2 style="color:rgb(73, 160, 247);text-decoration:underline;">Binary Rain</h2>
-                        <p>Binary Rain is an inspiration of the Matrix Rain by Emily Xie, a creative coder based in the USA. The work was done in P5, a Javascript front-end framework for building quick sketches/visuals. The main objective of the project was to visualize binary symbols trickling from top to bottom. Through this project, I found my love for front-end visuals and I'm definitely going to continue exploring this art.</p>
+                        <p>Binary Rain is an inspiration of the Matrix Rain by Emily Xie, a creative coder based in the USA. The work was done in P5, a Javascript front-end framework for building quick sketches/visuals. The main objective of the project was to visualize binary symbols trickling from top to bottom. Through this project, I found my love for front-end visualizations and I'm definitely going to continue exploring this art.</p>
                     </div>
                 </div>
-                <div class="slider_container hidden">caption two</div>
-                <div class="slider_container hidden">caption three</div>
+                <div class="slider_container hidden">
+                    <div class="project_spanshot">
+                        <div class="img_slider">
+                            <div class="next_prev">
+                                <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                                <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                            </div>
+                            <video src="../media/flask.mp4" autoplay='true' loop='true'></video>
+                            <div class="platforms">
+                                <a href="https://github.com/Dave-mash/binary-rain/tree/master" target="_blank">GitHub</a>
+                                <a href="https://dave-mash.github.io/binary-rain/" target="_blank">Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_description">
+                        <h2 style="color:rgb(73, 160, 247);text-decoration:underline;">Flask Blog</h2>
+                        <p>Flask Blog is a simple blogging application built in Flask and vanilla Javascript. This work was inspired by by Corey Schafer's(a professional coder and instructor) Blogging app in Flask youtube video. The main goal for this project was to cover all basic CRUD operations. However, the application is still going through a number of optimizations and is also currently not responsive. I'm hoping to rebuild the styles with boostrap in future.</p>
+                    </div>
+                    <div class="next_prev">
+                        <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                        <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                    </div>
+                </div>
+                <div class="slider_container hidden">
+                    <div class="project_spanshot">
+                        <div class="img_slider">
+                            <div class="next_prev">
+                                <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                                <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                            </div>
+                            <video src="../media/site.mp4" autoplay='true' loop='true'></video>
+                            <div class="platforms">
+                                <a href="https://github.com/Dave-mash/binary-rain/tree/master" target="_blank">GitHub</a>
+                                <a href="https://dave-mash.github.io/binary-rain/" target="_blank">Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_description">
+                        <h2 style="color:rgb(73, 160, 247);text-decoration:underline;">My site</h2>
+                        <p>My site is actually this very site you're scrolling through. I drew design inspirations from a number of very nice sites online. The site is meant to feature all my skills as a Web Developer. I did the work in plain CSS, HTML and Javascript hence the tidious work in the source code and is currently not tablet responsive. It is however, still very young and the plan is to redo all the styling with Boostrap. Every update I make on the source code I make sure is reflected on the site.</p>
+                    </div>
+                    <div class="next_prev">
+                        <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                        <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                    </div>
+                    <div class="next_prev">
+                        <button id="left_arrow" onclick="plusSlides(-1)" >Previous</button>
+                        <button id="right_arrow" onclick="plusSlides(1)" >Next</button>
+                    </div>
+                </div>
             </div>
             <img id='right_arrow' src="../media/right-arrow.png" onclick="plusSlides(1)" alt="right arrow">
         </div>
