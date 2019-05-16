@@ -5,23 +5,25 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 
 
-app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TSL'] = True
-app.config['MAIL_USENAME'] = os.getenv('EMAIL')
-app.config['MAIL_PASSWORD'] = os.getenv('EMAILPASS')
-
-email = os.getenv('EMAILPASS')
-email_pass = os.getenv('EMAIL')
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USENAME'] = "apipsdayv@gmail.com"  # os.getenv('EMAIL')
+app.config['MAIL_PASSWORD'] = "304130413041"  # os.getenv('EMAILPASS')
 
 
 mail = Mail(app)
 
+
 @app.route("/")
 def contact_email():
-    msg = Message('Hello', sender='macharia3041@gmail.com', recipients=['macharia3041@gmail.com'])
-    mail.send(msg)
-    return 'message sent!'
+    try:
+        msg = Message("Send Mail Tutorial!", sender="apipsdayv@gmail.com", recipients=["macharia3041@email.com"])
+        msg.body = "Yo!\nHave you heard the good word of Python???"
+        mail.send(msg)
+        return 'Mail sent!'
+    except Exception as e:
+        return(str(e))
 
 
 if __name__ == '__main__':
